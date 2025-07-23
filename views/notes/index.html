@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>📝 Notes App</h1>
+    </header>
+
+    <div class="note-form-container hidden" id="noteFormContainer">
+        <form id="noteForm" class="note-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Title for your note" required />
+
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Add your description" required></textarea>
+
+            <button type="submit" class="save-btn">Save Note</button>
+        </form>
+    </div>
+
+    <main class="notes-container" id="notesContainer">
+        <!-- Notes will appear here -->
+    </main>
+
+    <button id="toggleForm" class="add-btn">+</button>
+
+    <script src="../config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
